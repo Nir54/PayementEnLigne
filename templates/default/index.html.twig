@@ -3,8 +3,42 @@
 {% block title %}Hello DefaultController!{% endblock %}
 
 {% block body %}
+  <h1 class="text-center">Payement en ligne</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <h5 class="card-header text-center">Payement via PayPal</h5>
+        <div class="card-body">
+          <h5 class="card-title">Détail payement</h5>
+          <p class="card-text">Produit</p>
+          <p class="card-text">Quantité</p>
+          <p class="card-text">Prix</p>
+          <p class="card-text">Taxe</p>
+          <p class="card-text">Prix du produit</p>
+          <div class="text-right">
+            <a href="{{ path('payement via paypal') }}" class="btn btn-success">Payé</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <h5 class="card-header text-center">Payement via PaositraMoney</h5>
+        <div class="card-body">
+          <h5 class="card-title">Détail payement</h5>
+          <p class="card-text">Produit</p>
+          <p class="card-text">Quantité</p>
+          <p class="card-text">Prix</p>
+          <p class="card-text">Taxe</p>
+          <p class="card-text">Prix du produit</p>
+          <div class="text-right">
+            <a href="#" class="btn btn-success ">Payé</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
 
-<div class="example-wrapper">
-  default
-</div>
+
 {% endblock %}
